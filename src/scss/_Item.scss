@@ -2,3 +2,26 @@
 @import './mixins';
 
 
+.item {
+
+    
+
+    &__question {
+        padding:  1.25rem 0;
+        // border-bottom: 1px solid  $Lightgrayishblue; 
+    
+        img {
+            width: 0.75rem;
+            height: 0.5rem;
+            float:right;
+            margin-top: 5px;
+        }
+    
+    }
+
+    &__answer {
+        display: hidden;
+        font-size: 0.6875rem;
+        color: $Darkgrayishblue;
+    }
+}
