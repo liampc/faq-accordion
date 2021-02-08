@@ -5,13 +5,14 @@
 
 main {
     padding-top: 8.3125rem;
+    padding-bottom: 8.3125rem;
 }
 
 .card {
     min-width: 20.625rem;
     min-height: 33.625rem;
     background-color: white;
-    margin: 10.25rem 1.5625rem;
+    margin: 0 1.5625rem;
     border-radius: 30px;
 
     @include breakpoint-up('large'){
@@ -81,8 +82,15 @@ main {
         }
     }
 
-    &-faq {
-        height: 100%;
+    &__faq {
+        // height: 100%;
+       
+        padding: 6.625rem 1.625rem 1.625rem 1.625rem;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2.1875rem;
+        }
     }
 }
 
