@@ -27,6 +27,21 @@ body {
   min-height: 33.625rem;
   background-color: white;
   margin: 10.25rem 1.5625rem;
-  border-radius: 10px;
+  border-radius: 30px;
+}
+
+.card__hero::after {
+  content: '';
+  position: absolute;
+  min-width: 15rem;
+  min-height: 11.4375rem;
+  margin-top: -95px;
+  left: 50%;
+  -webkit-transform: translateX(-55%);
+          transform: translateX(-55%);
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/illustration-woman-online-mobile.svg");
+  background-position: 50% 50%;
+  background-size: 100%;
 }
 /*# sourceMappingURL=style.css.map */
