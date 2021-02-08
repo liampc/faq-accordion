@@ -52,23 +52,30 @@ main {
             background-size: 100%;
             
         }
+        
+        
 
         @include breakpoint-up('large'){
 
             width: 25rem;
             height: 33.5625rem;
             left: 31%;
-            background-image: url('../assets/images/bg-pattern-desktop.svg');
-            background-repeat: no-repeat;
-            background-position: 103% 67%;
-            background-size: 255%;
+            background-image:  url("../assets/images/illustration-woman-online-desktop.svg"), url("../assets/images/bg-pattern-desktop.svg");
+            background-repeat: no-repeat, no-repeat;
+            background-position: right 41%, 103% 65%;
+            background-size: 118%, 255%;
 
             &::before {
                 background-image: none;
             }
 
             &::after {
-                background-image: none;
+                background-image: url('../assets/images/illustration-box-desktop.svg');
+                background-size: 82%;
+                background-position: 50% top;
+                margin-top: 13.125rem;
+                margin-left: -30rem;
+
             }
 
         }
