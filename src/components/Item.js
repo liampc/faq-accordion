@@ -5,13 +5,14 @@ import '../scss/_Item.scss'
 
 import arrow from '../assets/images/icon-arrow-down.svg'
 
-function Item(){
+function Item(props){
     return (
         <div className="item">
-            <p className="item__question">How many team members 
+            <p className="item__question"> 
+                {props.list.answer}
                 <img src={arrow} alt="icon-arrow"/>
             </p>
-            <p className="item__answer">No more than</p>
+            <p className="item__answer">{props.list.answer}</p>
         </div>
     )
 }
