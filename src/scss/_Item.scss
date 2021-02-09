@@ -3,25 +3,28 @@
 
 
 .item {
-
-    
+    color: $Darkgrayishblue;
 
     &__question {
-        padding:  1.25rem 0;
+        padding-bottom:  1.25rem;
         border-bottom: 1px solid  $Lightgrayishblue; 
-    
+        font-size: 0.875rem;
+        display: flex;
+        justify-content: space-between;
+        
+
         img {
             width: 0.75rem;
             height: 0.5rem;
-            float:right;
+            // float:right;
             margin-top: 5px;
         }
     
     }
 
     &__answer {
-        display: hidden;
+        display: none;
         font-size: 0.6875rem;
-        color: $Darkgrayishblue;
+        
     }
 }
