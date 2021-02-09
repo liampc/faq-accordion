@@ -11,13 +11,25 @@
         font-size: 0.875rem;
         display: flex;
         justify-content: space-between;
+
+
+        &:active {
+            border: none;
+            color: $Verydarkdesaturatedblue;
+            font-weight: $font-bold;
+            padding-bottom: 0;
+        }
         
 
         img {
             width: 0.75rem;
             height: 0.5rem;
-            // float:right;
             margin-top: 5px;
+            transition: all 300ms ease-in;
+
+            &:active {
+                transform: rotate(180deg);
+            }
         }
     
     }
@@ -26,5 +38,11 @@
         display: none;
         font-size: 0.6875rem;
         
+
+        &:active {
+            display: block;
+            padding-bottom:  1.25rem;
+            border-bottom: 1px solid  $Lightgrayishblue; 
+        }
     }
 }
