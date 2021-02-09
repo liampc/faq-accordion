@@ -10,7 +10,6 @@ const content =  [
    },
    {
     question: " How do I reset my password?",
-       
     answer: "Click “Forgot password” from the login page or “Change password” from your profile page.A reset link will be emailed to you."
    },
    {

@@ -8,7 +8,7 @@ import contentData from '../content'
 function App(){
 
     const content = contentData.map(data => {
-        return <Item list={data} />
+        return <Item list={data} key={data.question}/>
     })
 
     return (
