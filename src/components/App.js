@@ -39,7 +39,11 @@ class App extends Component {
     render(){
 
         const content = this.state.contents.map(data => {
-            return <Item list={data} key={data.question} onClick={this.handleClick}/>
+            return <Item list={data} 
+                    key={data.question} 
+                    onClick={this.handleClick}
+                    isActive={data.isActive}
+                    />
         })
 
         return (

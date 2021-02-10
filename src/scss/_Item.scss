@@ -13,7 +13,7 @@
         justify-content: space-between;
 
 
-        &:active {
+        &-active {
             border: none;
             color: $Verydarkdesaturatedblue;
             font-weight: $font-bold;
@@ -24,33 +24,30 @@
             cursor: pointer;
             color: $Softred;
         }
-        
-
-        img {
-            width: 0.75rem;
-            height: 0.5rem;
-            margin-top: 5px;
-            transition: all 300ms ease-in;
-
-            &:active {
-                transform: rotate(180deg);
-            }
-            &:hover {
-                cursor: pointer;
-            }
-        }
     
     }
 
-    &__answer {
-        display: none;
-        font-size: 0.6875rem;
-        
+    &__arrow {
+        align-self: flex-start;
+        width: 0.75rem;
+        height: 0.5rem;
+        margin-top: 5px;
+        transition: transform 300ms ease-in-out;
 
-        &:active {
-            display: block;
-            padding-bottom:  1.25rem;
-            border-bottom: 1px solid  $Lightgrayishblue; 
+        &-active {
+            transform: rotate(180deg);
         }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__answer {
+        // display: none;
+        font-size: 0.6875rem;
+        // display: block;
+        padding-bottom:  1.25rem;
+        border-bottom: 1px solid  $Lightgrayishblue; 
+        
     }
 }
