@@ -20,6 +20,10 @@
     
 
         &--active {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
             border: none;
             color: $Verydarkdesaturatedblue;
             font-weight: $font-bold;
@@ -47,9 +51,15 @@
     }
 
     &__answer {
-        font-size: 0.6875rem;
-        padding-bottom:  1.25rem;
-        border-bottom: 1px solid  $Lightgrayishblue; 
-        transition: all 300ms ease-in-out;
+        display: none;
+
+        &--active {
+            display: block;
+            font-size: 0.6875rem;
+            padding-bottom:  1.25rem;
+            border-bottom: 1px solid  $Lightgrayishblue; 
+            transition: all 300ms ease-in-out;
+        }
+        
     }
 }

@@ -11,27 +11,26 @@ class Item extends Component {
 
     render (){
 
+        let questionClass = "item__question"
+        let arrowClass = "item__arrow"
+        let answerClass = "item__answer"
+
         if (this.props.isActive){
-            return (
-                <div className="item">
-                    <p className="item__question  item__question--active" onClick={() => this.props.onClick(this.props.list.id)}> 
-                        {this.props.list.question}
-                        <img src={arrow} alt="icon-arrow" className="item__arrow item__arrow--active"/>
-                    </p>
-                    <p className="item__answer">{this.props.list.answer}</p>
-                </div>
-            )
+            questionClass += "--active"
+            arrowClass += "--active"
+            answerClass += "--active"
         }
-        else {
-            return (
-                <div className="item">
-                    <p className="item__question" onClick={() => this.props.onClick(this.props.list.id)}> 
-                        {this.props.list.question}
-                        <img src={arrow} alt="icon-arrow"/>
-                    </p>
-                </div>
-            )
-        }
+
+        return (
+            <div className="item">
+                <p className={questionClass} onClick={() => this.props.onClick(this.props.list.id)}> 
+                    {this.props.list.question}
+                    <img src={arrow} alt="icon-arrow" className={arrowClass}/>
+                </p>
+                <p className={answerClass}>{this.props.list.answer}</p>
+            </div>
+        )
+        
     }
     
 }
