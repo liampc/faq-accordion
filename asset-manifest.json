@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/faq-accordion/static/css/main.fa09f60c.chunk.css",
+    "main.js": "/faq-accordion/static/js/main.cd55d857.chunk.js",
+    "main.js.map": "/faq-accordion/static/js/main.cd55d857.chunk.js.map",
+    "runtime-main.js": "/faq-accordion/static/js/runtime-main.9d7f0699.js",
+    "runtime-main.js.map": "/faq-accordion/static/js/runtime-main.9d7f0699.js.map",
+    "static/js/2.f8711c64.chunk.js": "/faq-accordion/static/js/2.f8711c64.chunk.js",
+    "static/js/2.f8711c64.chunk.js.map": "/faq-accordion/static/js/2.f8711c64.chunk.js.map",
+    "index.html": "/faq-accordion/index.html",
+    "static/css/main.fa09f60c.chunk.css.map": "/faq-accordion/static/css/main.fa09f60c.chunk.css.map",
+    "static/js/2.f8711c64.chunk.js.LICENSE.txt": "/faq-accordion/static/js/2.f8711c64.chunk.js.LICENSE.txt",
+    "static/media/_App.scss": "/faq-accordion/static/media/illustration-woman-online-mobile.0ec5a893.svg",
+    "static/media/icon-arrow-down.852fa301.svg": "/faq-accordion/static/media/icon-arrow-down.852fa301.svg",
+    "static/media/illustration-box-desktop.ec1ba14b.svg": "/faq-accordion/static/media/illustration-box-desktop.ec1ba14b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d7f0699.js",
+    "static/js/2.f8711c64.chunk.js",
+    "static/css/main.fa09f60c.chunk.css",
+    "static/js/main.cd55d857.chunk.js"
+  ]
+}
