@@ -44,6 +44,8 @@
 
         &--active {
             transform: rotate(180deg);
+            transition: all 300ms ease-in-out;
+            cursor: pointer;
         }
         &:hover {
             cursor: pointer;
