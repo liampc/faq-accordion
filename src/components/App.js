@@ -16,7 +16,19 @@ class App extends Component {
     }
     
     handleClick(id){
-        console.log(id)
+        
+        this.setState(prevState => {
+            const newTodos = prevState.contents.map(data => {
+                if (data.id == id){
+                    data.isActive = !data.isActive
+                }
+                return data
+            })
+            return {
+                contents: newTodos
+            }
+        })
+
     }
 
 
