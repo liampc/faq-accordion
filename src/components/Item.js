@@ -14,9 +14,9 @@ class Item extends Component {
         if (this.props.isActive){
             return (
                 <div className="item">
-                    <p className="item__question  item__question-active" onClick={() => this.props.onClick(this.props.list.id)}> 
+                    <p className="item__question  item__question--active" onClick={() => this.props.onClick(this.props.list.id)}> 
                         {this.props.list.question}
-                        <img src={arrow} alt="icon-arrow" className="item__arrow item__arrow-active"/>
+                        <img src={arrow} alt="icon-arrow" className="item__arrow item__arrow--active"/>
                     </p>
                     <p className="item__answer">{this.props.list.answer}</p>
                 </div>
