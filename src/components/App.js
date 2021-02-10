@@ -4,6 +4,8 @@ import '../scss/_App.scss'
 
 import Item from './Item'
 import contentData from '../content'
+import box from '../assets/images/illustration-box-desktop.svg'
+
 
 class App extends Component {
 
@@ -49,7 +51,9 @@ class App extends Component {
         return (
             <main>
                 <div className="card">
-                     <div className="card__hero"></div>
+                     <div className="card__hero">
+                         <img src={box} alt="box" />
+                     </div>
                      <div className="card__faq">
                          <h1>FAQ</h1>
                          {content}

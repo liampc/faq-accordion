@@ -24,7 +24,11 @@ main {
 
     &__hero {
         
+        
+        img {
+            display: none;
 
+        }
 
         &::before {
             content: '';
@@ -57,9 +61,9 @@ main {
         
 
         @include breakpoint-up('large'){
-
+            display: flex;
             width: 25rem;
-            height: 33.5625rem;
+            min-height: 33.5625rem;
             left: 31%;
             background-image:  url("../assets/images/illustration-woman-online-desktop.svg"), url("../assets/images/bg-pattern-desktop.svg");
             background-repeat: no-repeat, no-repeat;
@@ -71,20 +75,20 @@ main {
             }
 
             &::after {
-                background-image: url('../assets/images/illustration-box-desktop.svg');
-                background-size: 82%;
-                background-position: 50% top;
-                margin-top: 13.125rem;
-                margin-left: -30rem;
-
+                background-image: none;
             }
 
+            img {
+                display: block;
+                align-self: center;
+                align-self: center;
+                margin-left: -8rem;
+                margin-top: 3rem;
+            }
         }
     }
 
     &__faq {
-        // height: 100%;
-       
         padding: 6.625rem 1.625rem 1.625rem 1.625rem;
 
         h1 {
