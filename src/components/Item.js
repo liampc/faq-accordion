@@ -12,7 +12,7 @@ class Item extends Component {
     render (){
         return (
             <div className="item">
-                <p className="item__question"> 
+                <p className="item__question" onClick={() => this.props.onClick(this.props.list.id)}> 
                     {this.props.list.question}
                     <img src={arrow} alt="icon-arrow"/>
                 </p>

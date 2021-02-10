@@ -12,12 +12,19 @@ class App extends Component {
             this.state = {
                 contents: contentData
             }
+            this.handleClick = this.handleClick.bind(this)
     }
     
+    handleClick(id){
+        console.log(id)
+    }
+
+
+
     render(){
 
         const content = this.state.contents.map(data => {
-            return <Item list={data} key={data.question}/>
+            return <Item list={data} key={data.question} onClick={this.handleClick}/>
         })
 
         return (
