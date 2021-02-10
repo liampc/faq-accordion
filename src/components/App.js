@@ -20,7 +20,10 @@ class App extends Component {
         this.setState(prevState => {
             const newTodos = prevState.contents.map(data => {
                 if (data.id == id){
-                    data.isActive = !data.isActive
+                    return {
+                        ...data,
+                        isActive: !data.isActive
+                    }
                 }
                 return data
             })
